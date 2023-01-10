@@ -1,6 +1,16 @@
+
+
+(function () {
+var words = ["Hello","Nice to have you here", "Welcome!" ],
+i = 0;
+setInterval(function(){ $('#words').fadeOut(function(){
+    $(this).html(words[(i = (i + 1) % words.length)]).fadeIn();
+    }); }, 3000)
+})();
+
 var img = new Image();
 img.onload = start;
-img.src = "https://github.com/eoaaou/aboutme/blob/main/src/assets/images/grad.jpg?raw=true";
+img.src = "/images/grad.png";
 
 function start() {
 

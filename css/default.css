@@ -1,13 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+* {box-sizing: border-box}
+
 html {
   font-family:'Orbitron', sans-serif;
-  
 }
+
 body {
   margin: 0;
+  
 }
 .container {
   position: relative;
+
 }
 .container canvas {
   position: absolute;
@@ -15,47 +20,74 @@ body {
 #container canvas, #navbar {  
   position: absolute;
 }
-.navbar {
-  width: 50%;
-  margin: auto;
-  padding: 10px 0;
-  text-decoration: none;
-  color:rgb(221, 255, 0);    
-}
+
 .overlay {
-  width: 70%;
+  max-width: 800px;
   margin: auto;
-  padding: 50px 0;      
+  padding: 50px 20px;  
+  min-width: 666px;
 }
+
+.bar {
+  border-radius: 5px;
+  width: 100%;
+  background-color: rgb(93, 93, 93);
+}
+
+.skills {
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 5px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: white;
+}
+
+.one {width: 90%; background-color: #ff9d00;}
+.two {width: 80%; background-color: #ff00d9;}
+.three {width: 70%; background-color: #40009a;}
+.four {width: 65%; background-color: #2296df;}
+
 #content {
   position: relative;
   border: 5px solid rgb(221, 255, 0);
-  height: 130vh;
+  height: 110vh;
   background-color: black;
-  opacity: 90%;
+  opacity: 80%;
   padding: 10px;
   border-radius: 25px;
   text-align: center;
-  color: white; 
+  color: white;   
 }
 
 #infobox {
-  border: 3px solid rgb(189, 255, 235);
-  border-radius: 15px;
+  border: 2px dashed rgb(63, 16, 139);
+  border-radius: 5px;
   width: 35%;
-  height: 40vh;
   float: right;
+  min-width: 230px;
 }
+
+ul {
+  margin-left: -10px;
+  list-style-image: url();
+}
+
+li {
+  width: 10px;
+}
+
 #about {
   width: 60%;
-  height: 40vh;
   float: left;
+  
 }
 
 #links {
   margin-top: 50px;
   width: 100%;
   float: right;
+  
 }
 
 #outro {
@@ -63,6 +95,7 @@ body {
   font-size: 25px;
   padding-top: 10px;
   margin: 0;
+  
 
 }
-canvas { width: 100%; height: 150vh; display: block; }
+canvas { width: 100%; height: 135vh; display: block; }
