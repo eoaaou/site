@@ -10,7 +10,7 @@ setInterval(function(){ $('#words').fadeOut(function(){
 
 var img = new Image();
 img.onload = start;
-img.src = "/images/grad.png";
+img.src = "/site/images/grad.png";
 
 function start() {
 
