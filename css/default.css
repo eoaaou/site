@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
 
-* {box-sizing: border-box}
+canvas { width: 100%; height: 860px; display: block; }
 
 html {
   font-family:'Orbitron', sans-serif;
@@ -8,8 +8,8 @@ html {
 
 body {
   margin: 0;
-  
 }
+
 .container {
   position: relative;
 
@@ -17,15 +17,14 @@ body {
 .container canvas {
   position: absolute;
 }
-#container canvas, #navbar {  
-  position: absolute;
-}
+
 
 .overlay {
+
   max-width: 800px;
   margin: auto;
   padding: 50px 20px;  
-  min-width: 666px;
+  
 }
 
 .bar {
@@ -48,10 +47,10 @@ body {
 .three {width: 70%; background-color: #40009a;}
 .four {width: 65%; background-color: #2296df;}
 
-#content {
+.content {
   position: relative;
   border: 5px solid rgb(221, 255, 0);
-  height: 110vh;
+  height: 700px;
   background-color: black;
   opacity: 80%;
   padding: 10px;
@@ -69,12 +68,19 @@ body {
 }
 
 ul {
-  margin-left: -10px;
-  list-style-image: url();
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
 }
 
 li {
-  width: 10px;
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+li:before {
+  content: "->";
+  padding-right: 5px;
 }
 
 #about {
@@ -98,4 +104,58 @@ li {
   
 
 }
-canvas { width: 100%; height: 135vh; display: block; }
+
+
+
+
+@media only screen and (max-width: 680px) {
+  /* For mobile phones: */
+  canvas { width: 100%; height: 1050px; display: block; }
+  .overlay {
+    max-width: 800px;
+    margin: auto;
+    padding: 50px 20px;
+    min-width: 300px;   
+  }
+
+  .content {
+    position: relative;
+    border: 5px solid rgb(221, 255, 0);
+    height: 900px;
+    background-color: black;
+    opacity: 80%;
+    padding: 10px;
+    border-radius: 25px;
+    text-align: center;
+    color: white;   
+  }
+
+  #about {
+    width: 100%;
+    float: left;  
+  }
+
+  #infobox {
+    margin-top: 10px;
+    border: 2px dashed rgb(63, 16, 139);
+    border-radius: 5px;
+    width: 100%;
+    float: right;
+  }
+
+  ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  
+  li {
+    padding-left: 1em;
+    text-indent: -1em;
+  }
+  
+  li:before {
+    content: "->";
+    padding-right: 5px;
+  }
+}

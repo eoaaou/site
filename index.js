@@ -1,7 +1,7 @@
 
 
 (function () {
-var words = ["Hello","Nice to have you here", "Welcome!" ],
+var words = ["Hello", "Welcome!" ],
 i = 0;
 setInterval(function(){ $('#words').fadeOut(function(){
     $(this).html(words[(i = (i + 1) % words.length)]).fadeIn();
